@@ -627,11 +627,22 @@ void pick_box()
 }
 void keep_box()
 {
-    //as the arm would be in air 
-    //bring it down (set the box a little up from the surface)
-    //release the gripper only at a lesser angle first and then increase the angle later)
-    //bring the gripper-arm back at original position
-    //free the servos
+   _delay_ms(1000);		//bring it down (set the box a little up from the surface)
+   servo_2(35);
+   _delay_ms(1000);		//release the gripper only at a lesser angle first and then increase the angle later)
+  
+
+    servo_2(0);
+   _delay_ms(1000);
+   servo_1(0);			     //bring the arm back	
+   _delay_ms(1000);
+   servo_2(90);
+   _delay_ms(1000);	
+
+
+// _delay_ms(2000);
+  servo_2_free();
+  servo_1_free(); 
 }
 
 int main(void)
