@@ -1,0 +1,122 @@
+sort1=sorting zone on left side
+sort2=sorting zone on right side
+
+upper_left_1=upper left terminal on left side
+upper_left_2=upper left terminal on right side
+
+others are analogue of this.
+
+Enjoy!!
+
+
+sort1_upper_left_1(){
+
+	left_turn();
+	blackline();
+	right_turn();
+	
+
+}
+sort2_upper_left_1(){
+	left_turn();
+	blackline();
+	letf_turn();
+	blackline();
+}
+
+sort2_upper_left_2(){
+	
+	left_turn();
+	blackline();
+	left_turn();
+
+
+}
+
+sort1_upper_left_2(){
+	left_turn();
+	blackline();
+	right_turn();
+	blackline();
+	
+}
+
+sort1_upper_right_1(){
+	right_turn();
+	blackline();
+	right_turn();
+
+}
+
+sort2_upper_right_1(){
+	right_turn();
+	blackline();
+	left_turn();
+	blackline();
+
+}
+
+sort1_upper_right_2(){
+	right_turn();
+	blackline();
+	right_turn();
+	blackline();
+}
+
+sort2_upper_right_2(){
+	right_turn();
+	blackline();
+	left_turn();
+}
+
+sort1_lower_left_1(){
+	right_turn();
+	blackline();
+	left_turn();
+}
+
+sort2_lower_left_1(){
+	right_turn();
+	blackline();
+	right_turn();
+	blackline();
+}
+
+sort1_lower_left_2(){
+	right_turn();
+	blackline();
+	left_turn();
+	blackline();
+}
+
+sort2_lower_left_2(){
+	right_turn();
+	blackline();
+	right_turn();
+}
+
+sort1_lower_right_1(){
+	left_turn();
+	blackline();
+	left_turn();
+}
+
+sort2_lower_right_1(){
+	left_turn();
+	blackline();
+	right_turn();
+	blackline();
+}
+
+sort1_lower_right_2(){
+	left_turn();
+	blackline();
+	left_turn();
+	blackline();
+}
+
+sort2_lower_right_2(){
+	left_turn();
+	blackline();
+	right_turn();A
+}
