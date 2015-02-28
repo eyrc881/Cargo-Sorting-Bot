@@ -37,7 +37,7 @@ HEX_EEPROM_FLAGS += --change-section-lma .eeprom=0 --no-change-warnings
 
 
 ## Objects that must be built in order to link
-OBJECTS = col.o 
+OBJECTS = secondrun1.o 
 
 ## Objects explicitly added by the user
 LINKONLYOBJECTS = 
@@ -46,7 +46,7 @@ LINKONLYOBJECTS =
 all: $(TARGET) col.hex col.eep col.lss size
 
 ## Compile
-col.o: ../col.c
+secondrun1.o: ../../Cargo-Sorting-Bot/secondrun1.c
 	$(CC) $(INCLUDES) $(CFLAGS) -c  $<
 
 ##Link

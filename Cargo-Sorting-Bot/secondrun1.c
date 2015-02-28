@@ -485,51 +485,88 @@ void center_right()
 }	
 int main()
 {
-blackline();
-turn_left();
+/*
+	blackline();
+	turn_left();
 
-center_left();
-turn_right();
-center_right();
-blackline();
-turn_left();
-center_left();
-turn_right();
-center_right();
+	center_left();
+	turn_right();
+	center_right();
+	blackline();
+	turn_left();
+	center_left();
+	turn_right();
+	center_right();
+*/
+	// Traversing
 
-// Traversing
+	blackline();
+	soft_left();
+	while(1)
+	{
+		Left_white_line = ADC_Conversion(3);	//Getting data of Left WL Sensor
+		Center_white_line = ADC_Conversion(2);	//Getting data of Center WL Sensor
+		Right_white_line = ADC_Conversion(1);	//Getting data of Right WL Sensor
 
-blackline();
-turn_left();
-blackline();
-turn_right();
-blackline();
-turn_left();
-center_left();
-turn_right();
-turn_right();
-blackline();
-blackline();
-turn_left();
-center_left();
-turn_right();
-turn_right();
-blackline();
-turn_right();
-blackline();
-blackline();
-turn_left();
-blackline();
-turn_left();
-center_left();
-turn_right();
-turn_right();
-blackline();
-blackline();
-turn_left();
-center_left();
-turn_right();
-turn_right();
+		print_sensor(1,1,3);	//Prints value of White Line Sensor1
+		print_sensor(1,5,2);	//Prints Value of White Line Sensor2
+		print_sensor(1,9,1);	//Prints Value of White Line Sensor3
+		
+		velocity(0,130);
+		_delay_ms(10);
+		if(Center_white_line>0x0c)
+		{
+			velocity(0,0);
+			break;
+		}
+	}
+	blackline();
+	soft_right();
+	while(1)
+	{
+		Left_white_line = ADC_Conversion(3);	//Getting data of Left WL Sensor
+		Center_white_line = ADC_Conversion(2);	//Getting data of Center WL Sensor
+		Right_white_line = ADC_Conversion(1);	//Getting data of Right WL Sensor
+
+		print_sensor(1,1,3);	//Prints value of White Line Sensor1
+		print_sensor(1,5,2);	//Prints Value of White Line Sensor2
+		print_sensor(1,9,1);	//Prints Value of White Line Sensor3
+		
+		velocity(130,0);
+		_delay_ms(10);
+		if(Center_white_line>0x0c)
+		{
+			velocity(0,0);
+			break;
+		}
+	}
+	blackline();
+	turn_left();
+	center_left();
+	turn_right();
+	turn_right();
+	blackline();
+	blackline();
+	turn_left();
+	center_left();
+	turn_right();
+	turn_right();
+	blackline();
+	turn_right();
+	blackline();
+	blackline();
+	turn_left();
+	blackline();
+	turn_left();
+	center_left();
+	turn_right();
+	turn_right();
+	blackline();
+	blackline();
+	turn_left();
+	center_left();
+	turn_right();
+	turn_right();
 
 
 
