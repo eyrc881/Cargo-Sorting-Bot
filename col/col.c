@@ -800,6 +800,8 @@ void turn_right()
 
 	}
 }
+/*
+
  /*
  *
  * Function Name: indicator_blocks
@@ -863,3 +865,4 @@ int main(void)
 	indicator_blocks();
   
 }
+*/
