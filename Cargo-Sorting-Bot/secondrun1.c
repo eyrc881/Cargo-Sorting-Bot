@@ -486,6 +486,8 @@ void center_right()
 int main()
 {
 /*
+	// Indicator Blocks.
+
 	blackline();
 	turn_left();
 
@@ -542,15 +544,17 @@ int main()
 	}
 	blackline();
 	turn_left();
+	center_right();
+	
+	turn_left();
 	center_left();
-	turn_right();
-	turn_right();
 	blackline();
 	blackline();
 	turn_left();
+	center_right();
+	
+	turn_left();
 	center_left();
-	turn_right();
-	turn_right();
 	blackline();
 	turn_right();
 	blackline();
